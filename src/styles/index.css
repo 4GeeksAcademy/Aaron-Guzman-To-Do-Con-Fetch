@@ -6,9 +6,31 @@ body {
     background: gray;
 }
 
+.toDoElement{
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+
 button{
-    border: none;
-    border-bottom: solid 1px #dddddd;
     background-color: #fff;
     margin-bottom: 1px;
+    flex: 1;
+    height: 100%;
+    padding-top: 6px;
+    padding-bottom: 10px;
+
+}
+
+.showButton {
+    display: inline ;
+}
+
+.hideButton {
+    display: none;
+}
+
+.toDoText{
+    overflow: auto;
 }
