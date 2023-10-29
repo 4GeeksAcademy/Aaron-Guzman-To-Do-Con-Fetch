@@ -1,36 +1,71 @@
-
-body {
-    background: gray;
-}
-.container {
-    background: gray;
+body{
+    background-color: #ddd;
 }
 
-.toDoElement{
-    display: flex;
-    align-items: center;
+.container{
+    background-color: rgba(155, 194, 151, 0.315);
+    margin: auto;
+    margin-top: 5%;
+    width: 50%;
     height: auto;
 }
 
+.listGroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-button{
-    background-color: #fff;
-    margin-bottom: 1px;
-    flex: 1;
-    height: 100%;
-    padding-top: 6px;
-    padding-bottom: 10px;
+h1{
+    margin-top: 50px;
+    color: rgb(108, 89, 61);
+    font-size: 50px;
+    border-bottom: solid 1px gray;
+    width: 50%;
+    text-align: center;
+}
+
+input{
+    border: none;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+a{
+    margin-bottom: 50px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    margin-left: -35px;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: red;
+    opacity: 0;
+    transition: 0.3s ease;
 
 }
 
-.showButton {
-    display: inline ;
+li:hover button {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0);
 }
 
-.hideButton {
-    display: none;
+li:hover {
+    background-color: beige;
+    border: solid black 1px;
 }
 
-.toDoText{
-    overflow: auto;
+.taskCounter {
+    border-top: solid 1px gray;
+    width: 50%;
+    text-align: center;
 }
